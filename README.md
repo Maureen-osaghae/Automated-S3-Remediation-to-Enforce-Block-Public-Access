@@ -12,17 +12,18 @@ In this lab, we’ll focus on bucket-level enforcement for demonstration purpose
 
 <img width="739" height="356" alt="image" src="https://github.com/user-attachments/assets/bac447b1-6bcd-401b-80b7-acbe062ed2de" />
 
-# Create a noncompliant S3 bucket
-Let’s start the lab by creating a non-compliant S3 bucket. Since we’re going to be checking for Block Public Access non-compliance, we’ll want to create a bucket that disables this feature.
+# Step 1: Create a Non-Compliant S3 Bucket
+1. Navigate to Amazon S3 → Create bucket.
+
+2. Give your bucket a unique name, for example:
+
+       demo-noncompliant-bucket-222
 
 <img width="542" height="214" alt="image" src="https://github.com/user-attachments/assets/c070509b-57a9-43cc-ac70-f328f352e1e3" />
 
-I’ll name my bucket demo-noncompliant-bucket-222 but you should use something unique.
-
 <img width="959" height="349" alt="image" src="https://github.com/user-attachments/assets/88403378-64cb-4da5-a7b1-20cbbab12b21" />
 
-
-Disable “Block Public Access” by unchecking the checkbox and confirming.
+3. Under Block Public Access settings, uncheck all options to disable Block Public Access and confirming.
 
 <img width="916" height="266" alt="image" src="https://github.com/user-attachments/assets/fba1c8ab-e510-4a07-9c69-3a394aa44163" />
 
