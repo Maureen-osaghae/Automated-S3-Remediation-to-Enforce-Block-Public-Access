@@ -40,25 +40,19 @@ You now have a non-compliant bucket that will trigger our AWS Config rule later.
 
           s3-bucket-level-public-access-prohibited
 
+<img width="722" height="367" alt="image" src="https://github.com/user-attachments/assets/3c7d431a-4369-44c3-83cf-91bead641e22" />
+
 Under Evaluation mode, select:
 
 • Scope of changes: Resources
 
 • Resource type: AWS::S3::Bucket
 
-<img width="722" height="367" alt="image" src="https://github.com/user-attachments/assets/3c7d431a-4369-44c3-83cf-91bead641e22" />
-
-Under “Evaluation mode” we’ll want to select Resources for the scope of changes, since we’re looking for changes to AWS resources.
-
-For the “Resource category” we could leave it at All resource categories or we can narrow it down to AWS resources, it won’t make a difference here.
-
-Then, for the “Resource type” we can search for and select AWS S3 Bucket but it will probably already be selected for you based on the rule you selected.
-
-<img width="901" height="293" alt="image" src="https://github.com/user-attachments/assets/964b00ef-9d2e-4a59-91b1-51b74dfbec78" />
+You may leave the excludedPublicBuckets parameter empty (best practice: all buckets should be private).
 
 <img width="702" height="164" alt="image" src="https://github.com/user-attachments/assets/98f037f5-55e4-4e01-803e-494dd37bd3de" />
 
-Below that, the excludedPublicBuckets parameter would be useful if you wanted to exclude S3 buckets from this rule’s scope. So if you wanted to have a public bucket, you could use this. But again, best practice dictates you should have public buckets in entirely different accounts, so you should never really be using this for this type of rule.
+Review and create the rule.
 
 <img width="959" height="278" alt="image" src="https://github.com/user-attachments/assets/9d348c91-a1a2-4269-b8c4-8ca41a934b54" />
 
