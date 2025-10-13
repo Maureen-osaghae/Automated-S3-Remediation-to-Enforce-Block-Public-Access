@@ -56,16 +56,26 @@ Review and create the rule.
 
 <img width="959" height="278" alt="image" src="https://github.com/user-attachments/assets/9d348c91-a1a2-4269-b8c4-8ca41a934b54" />
 
-# Enable automated remediation
-After creating your rule, select it and click on Actions -> Manage remediation. Select Automatic remediation.
+#Step 3: Enable Automated Remediation
+1.
+2. After the rule is created, select it and choose:
+2. Actions → Manage remediation → Automatic remediation.
+
+For Remediation action, search and select:
+
+       AWSConfigRemediation-ConfigureS3BucketPublicAccessBlock
 
 <img width="770" height="254" alt="image" src="https://github.com/user-attachments/assets/661b120a-03b7-4995-b78f-788c62d01f16" />
 
-Leave the defaults unless otherwise instructed.
+Under Resource ID parameter, select BucketName.
 
-For the “Choose remediation action” option, search for and select AWSConfigRemediation-ConfigureS3BucketPublicAccessBlock
+3. In the Parameters section:
 
-(Pro tip, you can just start searching for ConfigureS3BucketP and it will filter down)
+• Set all options (BlockPublicAcls, IgnorePublicAcls, BlockPublicPolicy, RestrictPublicBuckets) to true.
+
+• Specify the AutomationAssumeRole ARN, e.g.:
+
+       arn:aws:iam::<account-id>:role/AutomatedS3Remediation
 
 <img width="635" height="110" alt="image" src="https://github.com/user-attachments/assets/684c5bd8-a5f8-4772-b8a5-3dd4435501c9" />
 
