@@ -170,7 +170,7 @@ Finally, let’s head back over to S3 and check the Block public access setting 
 
 <img width="932" height="314" alt="image" src="https://github.com/user-attachments/assets/5a49470b-3e4f-4953-adc6-56abce8f5f8b" />
 
-Conclusion
+# Conclusion
 This setup now ensures that if anyone ever tries (accidentally or maliciously) to disable “Block Public Access” for one of your S3 buckets in this account, it will automatically revert back in only a few minutes maintaining data’s confidentiality and compliance posture.
 
 
