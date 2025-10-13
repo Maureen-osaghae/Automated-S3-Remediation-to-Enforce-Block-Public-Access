@@ -165,6 +165,18 @@ The next step is to wait and see Config automatically remediate the issue! This 
 Eventually, you will see:
 The action status to change until it eventually says “Action executed successfully”
 
+Let’s change the filter to “All” or “Compliant” and we should see our bucket. Let’s click on it. Then click on “Resource timeline.”
+
+<img width="678" height="212" alt="image" src="https://github.com/user-attachments/assets/e82b8ae2-f5e4-4f28-b585-2907eac68ff8" />
+
+Finally, let’s head back over to S3 and check the Block public access setting – we should see it set to On.
+
+<img width="932" height="314" alt="image" src="https://github.com/user-attachments/assets/5a49470b-3e4f-4953-adc6-56abce8f5f8b" />
+
+Conclusion
+This setup now ensures that if anyone ever tries (accidentally or maliciously) to disable “Block Public Access” for one of your S3 buckets in this account, it will automatically revert back in only a few minutes. This is a great use case of when automated remediation is both practical and helpful.
+
+
 
 
 
