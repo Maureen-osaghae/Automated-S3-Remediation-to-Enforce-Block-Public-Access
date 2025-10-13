@@ -160,11 +160,9 @@ We can also go up and click on Actions -> Re-evaluate to speed it along, as this
 
 The next step is to wait and see Config automatically remediate the issue! This can take 10-30 minute. I just did it myself and it took 23 minutes. You can speed it along if you’d like, especially since you have limited time in the lab environment, by selecting the resource and clicking on Remediate. Normally when enabling automated remediation you don’t need to take this action manually and you may not even have permissions to directly take that action (as it instead executes through a role), but we granted you permissions in the lab so you could speed it along if you wanted.
 
-<img width="674" height="162" alt="image" src="https://github.com/user-attachments/assets/5970dd3d-6494-4ddd-8b80-85a9d2030062" />
+<img width="695" height="186" alt="image" src="https://github.com/user-attachments/assets/a31e5c40-39f9-49f5-9c06-c7786e67120b" />
 
 Eventually, you will see:
-
-The S3 bucket listed as noncompliant
 The action status to change until it eventually says “Action executed successfully”
 
 
