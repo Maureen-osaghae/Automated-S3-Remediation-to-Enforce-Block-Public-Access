@@ -40,11 +40,11 @@ You now have a non-compliant bucket that will trigger our AWS Config rule later.
 
           s3-bucket-level-public-access-prohibited
 
-<img width="652" height="200" alt="image" src="https://github.com/user-attachments/assets/d6eb4a14-b7c5-41f9-9bba-63be73411024" />
+Under Evaluation mode, select:
 
-Config should already be enabled for your account, so you can head straight to “Rules.” Then Add rule.
+• Scope of changes: Resources
 
-Select Add AWS managed rule so that we don’t have to create it from scratch, and then search for s3-bucket-level-public-access-prohibited.
+• Resource type: AWS::S3::Bucket
 
 <img width="722" height="367" alt="image" src="https://github.com/user-attachments/assets/3c7d431a-4369-44c3-83cf-91bead641e22" />
 
